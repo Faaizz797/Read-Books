@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div>
+     <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+              <span class="navbar-logo mb-0 h1"><span>Read</span> Books</span>
+            </div>
+    </nav>
+    </div>
+
+    <!-- Book Form -->
+    <div class="content">
+       
+        <div class="form">
+            <div class="form-container">
+                <h2 class="form-heading">Add a book</h2>
+                <form id="bookForm" action="" method="post">
+                    <div class="form-group">
+                        <input type="text" name="judul" id="title" placeholder="">
+                        <label for="judul">Title</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="text" name="penulis" id="writer" placeholder="">
+                            <label for="penulis">Writer</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" name="tahun" id="year" placeholder="">
+                            <label for="tahun">Realease Year</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="isRead" id="readed" placeholder="">
+                        <label for="isRead">Readed</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Save it</button>
+                </form>
+            </div>
+          
+        </div>
+
+        <!-- Book Shelf -->
+        <div class="book-shelf">
+            <div class="unread-container">
+                <h2 class="title">Unreaded</h2>
+                <div id="notRead">
+                </div>
+            </div>
+            <div class="readed-container">
+                <h2 class="title">Readed</h2>
+                <div id="haveRead">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 by :
+          <a style="text-decoration: none;" class="text-white" href="#">Faiz [ For Dicoding Submission Purpose ]</a>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
